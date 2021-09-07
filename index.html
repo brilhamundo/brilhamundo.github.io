@@ -3,12 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
         <link rel="stylesheet" href="css/styles.css">
+
         <title>Brilha Mundo</title>
     </head>
 
     <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
 
         <!--========== HEADER ==========-->
         <header class="l-header" id="header">
@@ -20,8 +30,12 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#" class="nav__link active-link">Home</a></li>
+						<li class="nav__item"><a href="#sobre_nos" class="nav__link">Sobre nós</a></li>
                         <li class="nav__item"><a href="#receitas" class="nav__link">Serviços</a></li>
                         <li class="nav__item"><a href="#cadastro_receitas" class="nav__link">TV</a></li>
+                        <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
+						
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
                 </div>
 
@@ -37,15 +51,30 @@
             <section class="home" id="home">
                 <div class="home__container bd-container bd-grid">
                     <div class="home__data">
-                        <h1 class="home__title">Fazer brilhar<br>o mundo</h1>
+                        <h1 class="home__title">Fazendo o<br>mundo brilhar</h1>
                         <h2 class="home__subtitle">Despertando todo o<br>encantamento da infância.</h2>
-                        <a href="#receitas" class="button">Descubra</a>
+                        <a href="#sobre_nos" class="button">Conheça</a>
                     </div>
                     <img src="img/home.png" alt="" class="home__img">
                 </div>
             </section>
 
-            <!--========== RECEITAS ==========-->
+            <!--========== SOBRE NÓS ==========-->
+            <section class="cadastro_receitas section bd-container" id="sobre_nos">
+                <div class="cadastro_receitas__container  bd-grid">
+                    <div class="cadastro_receitas__data">
+                        <span class="section-subtitle cadastro_receitas__initial">Sobre nós</span>
+                        <h2 class="section-title cadastro_receitas__initial">Fazer o mundo brilhar</h2>
+                        <p class="cadastro_receitas__description">A Brilha Mundo surgiu com toda a vontade das gêmeas Dai e Shay em contagiar as pessoas com a essência da infância, que é pura alegria, magia e encanto.</p>
+						<p class="cadastro_receitas__description">Daienne e Shayene são naturais de Urussanga, mas cresceram na cidade de Palhoça/SC. As duas tem formação em Educação Física e atuam a mais de 10 anos com educação e animação de eventos..</p>
+                    <a href="#receitas" class="button">Nossos serviços</a>
+					</div>
+
+                    <img src="img/sobre.jpg" alt="" class="cadastro_receitas__img">
+                </div>
+            </section>
+
+            <!--========== SERVIÇOS ==========-->
             <section class="receitas section bd-container" id="receitas">
                 <span class="section-subtitle">Serviços</span>
                 <h2 class="section-title">Venha se encantar com a gente</h2>
@@ -53,40 +82,56 @@
                 <div class="receitas__container bd-grid">
                     <div class="receitas__content">
                         <img src="img/servicos1.png" alt="" class="receitas__img">
-                        <h3 class="receitas__name">Animição de Festas</h3>
-                        <span class="receitas__detail">Para a festa ser inesquecível</span>
-                        <a href="#receitas" class="button receitas__button">Ver</a>
+                        <h3 class="receitas__name">Animição de festas e eventos</h3>
+                        <span class="receitas__detail">Atividades personalizadas de acordo com o tema da festa</span>
                     </div>
 				
                     <div class="receitas__content">
                         <img src="img/servicos2.png" alt="" class="receitas__img">
-                        <h3 class="receitas__name">Presença das princesas</h3>
+                        <h3 class="receitas__name">Presença das princesas e personagens</h3>
                         <span class="receitas__detail">As princesas da Disney em sua festa</span>
-                        <a href="#receitas" class="button receitas__button">Ver</a>
                     </div>
 
                     <div class="receitas__content">
                         <img src="img/servicos3.png" alt="" class="receitas__img">
                         <h3 class="receitas__name">Apresentação musical</h3>
                         <span class="receitas__detail">Surpreendendo a todos de forma especial</span>
-                        <a href="#receitas" class="button receitas__button">Ver</a>
                     </div>
                 </div>
             </section>
 
-            <!--========== CADASTRO DE RECEITA ==========-->
+            <!--========== TV ==========-->
             <section class="cadastro_receitas section bd-container" id="cadastro_receitas">
                 <div class="cadastro_receitas__container  bd-grid">
                     <div class="cadastro_receitas__data">
                         <span class="section-subtitle cadastro_receitas__initial">Brilha Mundo Show</span>
                         <h2 class="section-title cadastro_receitas__initial">Toda a diversão da Brilha Mundo na TV</h2>
                         <p class="cadastro_receitas__description">Acompanhe nosso programa todas as quartas-feira, as 10hs na Primer TV ou assista no YouTube.</p>
-                        <a href="https://www.youtube.com/watch?v=rlGuJKoOivA" class="button">Assista</a>
+                        <a href="https://www.youtube.com/watch?v=rlGuJKoOivA" class="button">Programa 6</a>
+                        <a href="https://www.youtube.com/watch?v=oeonx5sJm5s" class="button">Programa 5</a>
+                        <a href="https://www.youtube.com/watch?v=K2iLX2V3tCE" class="button">Programa 4</a>
                     </div>
 
                     <img src="img/tv.jpg" alt="" class="cadastro_receitas__img">
                 </div>
             </section>
+
+            <!--========== CONTATO ==========-->
+            <section class="contact section bd-container" id="contato">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Contato</span>
+                        <h2 class="section-title contact__initial">Entre em contato</h2>
+                        <p class="contact__description">Solicite um orçamento ou saiba mais sobre os nossos serviços.</p>
+                        <p class="contact__description">Telefone e WhatsApp: (48) 98496-6984</p>
+                    </div>
+
+                    <div class="contact__button">
+                        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5548984966984" class="button">WhatsApp</a>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <!--========== FOOTER ==========-->
         <footer class="footer section bd-container">

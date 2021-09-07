@@ -62,6 +62,24 @@ html{
   scroll-behavior: smooth;
 }
 
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+  --title-color: #F1F3F2;
+  --text-color: #C7D1CC;
+  --body-color: #1D2521;
+  --container-color: #27302C;
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme{
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+  color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 body{
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
@@ -199,6 +217,37 @@ img{
   box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 
+/* Scroll top */
+.scrolltop{
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3rem;
+  background: rgba(6,156,84,.5);
+  border-radius: .4rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+  visibility: hidden;
+}
+
+.scrolltop:hover{
+  background-color: var(--first-color-alt);
+}
+
+.scrolltop__icon{
+  font-size: 1.8rem;
+  color: var(--body-color);
+}
+
+/* Show scrolltop */
+.show-scroll{
+  visibility: visible;
+  bottom: 1.5rem;
+}
+
 /*========== HOME ==========*/
 .home__container{
   height: calc(100vh - var(--header-height));
@@ -297,6 +346,15 @@ img{
   display: flex;
   padding: .225rem .813rem;
   border-radius: .5rem 0 .5rem 0;
+}
+
+/*========== CONTACT ==========*/
+.contact__container{
+  text-align: center;
+}
+
+.contact__description{
+  margin-bottom: var(--mb-3);
 }
 
 /*========== FOOTER ==========*/
