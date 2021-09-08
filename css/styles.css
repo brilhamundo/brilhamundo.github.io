@@ -248,6 +248,29 @@ img{
   bottom: 1.5rem;
 }
 
+/*========== HOME2 ==========*/
+.home2__container{
+  height: calc(100vh - var(--header-height));
+  align-content: center;
+}
+
+.home2__title{
+  font-size: var(--biggest-font-size);
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+
+.home2__subtitle{
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-4);
+}
+
+.home2__img{
+  width: 300px;
+  justify-self: center;
+}
+
 /*========== HOME ==========*/
 .home__container{
   height: calc(100vh - var(--header-height));
