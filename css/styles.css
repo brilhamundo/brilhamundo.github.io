@@ -248,29 +248,6 @@ img{
   bottom: 1.5rem;
 }
 
-/*========== HOME2 ==========*/
-.home2__container{
-  height: calc(100vh - var(--header-height));
-  align-content: center;
-}
-
-.home2__title{
-  font-size: var(--biggest-font-size);
-  color: var(--first-color);
-  margin-bottom: var(--mb-1);
-}
-
-.home2__subtitle{
-  font-size: var(--h1-font-size);
-  color: var(--title-color);
-  margin-bottom: var(--mb-4);
-}
-
-.home2__img{
-  width: 300px;
-  justify-self: center;
-}
-
 /*========== HOME ==========*/
 .home__container{
   height: calc(100vh - var(--header-height));
@@ -308,28 +285,28 @@ img{
   background-color: var(--first-color-alt);
 }
 
-/*========== CADASTRO DE RECEITAS ==========*/
-.cadastro_receitas__data{
+/*========== SOBRE NÓS ==========*/
+.sobre_nos__data{
   text-align: center;
 }
 
-.cadastro_receitas__description{
+.sobre_nos__description{
   margin-bottom: var(--mb-3);
 }
 
-.cadastro_receitas__img{
+.sobre_nos__img{
   width: 280px;
   border-radius: .5rem;
   justify-self: center;
 }
 
-/*========== RECEITAS ==========*/
-.receitas__container{
+/*========== SERVIÇOS ==========*/
+.servicos__container{
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
 
-.receitas__content{
+.servicos__content{
   position: relative;
   display: flex;
   flex-direction: column;
@@ -339,30 +316,30 @@ img{
   padding: .75rem;
 }
 
-.receitas__img{
+.servicos__img{
   width: 100px;
   align-self: center;
   margin-bottom: var(--mb-2);
 }
 
-.receitas__name, .receitas__preci{
+.servicos__name, .servicos__preci{
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
 }
 
-.receitas__name{
+.servicos__name{
   font-size: var(--normal-font-size);
 }
 
-.receitas__detail, .receitas__preci{
+.servicos__detail, .servicos__preci{
   font-size: var(--small-font-size);
 }
 
-.receitas__detail{
+.servicos__detail{
   margin-bottom: var(--mb-1);
 }
 
-.receitas__button{
+.servicos__button{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -430,19 +407,19 @@ img{
 /*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 576px){
   .home__container,
-  .cadastro_receitas__container,
+  .sobre_nos__container,
   .app__container{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
   }
 
-  .cadastro_receitas__data, .cadastro_receitas__initial,
+  .sobre_nos__data, .sobre_nos__initial,
   .app__data, .app__initial,
   .contact__container, .contact__initial{
     text-align: initial;
   }
 
-  .cadastro_receitas__img, .app__img{
+  .sobre_nos__img, .app__img{
     width: 380px;
     order: -1;
   }
@@ -490,18 +467,18 @@ img{
   }
 
   .services__container,
-  .receitas__container{
+  .servicos__container{
     margin-top: var(--mb-6);
   }
 
-  .receitas__container{
+  .servicos__container{
     grid-template-columns: repeat(3, 210px);
     column-gap: 4rem;
   }
-  .receitas__content{
+  .servicos__content{
     padding: 1.5rem;
   }
-  .receitas__img{
+  .servicos__img{
     width: 130px;
   }
 
@@ -520,7 +497,7 @@ img{
     width: 500px;
   }
 
-  .cadastro_receitas__container,
+  .sobre_nos__container,
   .app__container{
     column-gap: 7rem;
   }

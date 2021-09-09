@@ -98,8 +98,8 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(`.home__data, .home__img,
-            .cadastro_receitas__data, .cadastro_receitas__img,
-            .receitas__content,
+            .sobre_nos__data, .sobre_nos__img,
+            .servicos__content,
             .footer__content`, {
     interval: 200
 })
